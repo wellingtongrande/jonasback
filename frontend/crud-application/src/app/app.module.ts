@@ -9,6 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { IncluirFuncionarioComponent } from './funcionario/incluir-funcionario/incluir-funcionario.component';
+import { EditarFuncionarioComponent } from './funcionario/editar-funcionario/editar-funcionario.component';
+import { ListarFuncionarioComponent } from './funcionario/listar-funcionario/listar-funcionario.component';
+import { DeletarFuncionarioComponent } from './funcionario/deletar-funcionario/deletar-funcionario.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -16,6 +21,10 @@ import { UsersListComponent } from './components/users-list/users-list.component
     AddUserComponent,
     UserDetailComponent,
     UsersListComponent,
+    IncluirFuncionarioComponent,
+    EditarFuncionarioComponent,
+    ListarFuncionarioComponent,
+    DeletarFuncionarioComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +32,7 @@ import { UsersListComponent } from './components/users-list/users-list.component
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
